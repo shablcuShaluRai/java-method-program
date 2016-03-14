@@ -2,12 +2,7 @@ class Test
 {
 //Instance variable
 	int x=10;
-	
-<<<<<<< HEAD
-	//dispaly the variable
-=======
-	//display the variable
->>>>>>> added the static program
+
 	void display(){
 		System.out.println(x);
 	}
