@@ -1,19 +1,20 @@
 class Employee {
-	int id;
+	int id1,id2;
 
-	Employee(int id) {
-		this.id = id;
+	Employee(int id1,int id2) {
+		this.id1 = id1;
+		this.id2 = id2;
 	}
 
 }
 
 class Check1 {
-	void swap(Employee obj1, Employee obj2) {
+	void swap(Employee obj1) {
 
-		Employee temp;
-		temp = obj1;
-		obj1 = obj2;
-		obj2 = temp;
+		int temp;
+		temp = obj1.id1;
+		obj1.id1 = obj1.id2;
+		obj1.id2 = temp;
 
 	}
 }
@@ -23,12 +24,12 @@ public class Passobj {
 	
 	public static void main(String[] args) {
 		
-		Employee obj1=new Employee(10);
-		Employee obj2=new Employee(20);
+		Employee obj2=new Employee(10,20);
+	
 		Check1 obj=new Check1();
-		System.out.println(obj1.id+"\t"+obj2.id);
-		obj.swap(obj1, obj2);
-		System.out.println(obj1.id+"\t"+obj2.id);
+		System.out.println(obj2.id1+"\t"+obj2.id2);
+		obj.swap(obj2);
+		System.out.println(obj2.id1+"\t"+obj2.id2);
 		
 		
 		
